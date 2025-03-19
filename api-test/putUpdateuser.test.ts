@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { expect } from 'chai';
-const { Faker } = require('@faker-js/faker/.'); 
 
 describe('PUT Update User - GoRest API', () => {
   const url = 'https://gorest.co.in/public/v2/users/7726632'; // Endpoint untuk update user
