@@ -4,7 +4,7 @@
   "description": "this is api automation framework",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register /api-test/getSingleUser.test.ts"
+    "test": "npx mocha -r ts-node/register --reporter spec api-test/*.ts"
   },
   "keywords": [
     "api",

@@ -1,16 +1,17 @@
 import axios from 'axios';
 import { expect } from 'chai';
+const { Faker } = require('@faker-js/faker/.'); 
 
 describe('PUT Update User - GoRest API', () => {
-  const url = 'https://gorest.co.in/public/v2/users/7001887'; // Endpoint untuk update user
-  const token = 'f910b8ddae66305cb9dc9d1c0767ee7ef0543549cd47ee2947f3c2bbe03da87b'; // Ganti dengan akses token API Gorest Terbaru
+  const url = 'https://gorest.co.in/public/v2/users/7726632'; // Endpoint untuk update user
+  const token = 'a0c59800596acf5528b351e743492432379af37be9d0d756ee5698919b7918f3'; // Ganti dengan akses token API Gorest Terbaru
 
   it('should update user successfully', async () => {
     const updatedUserData = {
-      name: 'Aldi Taher',
-      email: `alditaher1234@example.com`, // Email harus unik
+      name: 'Alan Dimas',
+      email: `alan_dimas@green.test`, // Email harus unik
       gender: 'male',
-      status: 'active',
+      status: 'inactive',
     };
 
     try {
